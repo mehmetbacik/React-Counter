@@ -5,9 +5,94 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #f7e7db;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#counter {
+  background: #a38a75;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  width: 400px;
+  height: 400px;
+  border-radius: 30px;
+  margin: 30px;
+}
+
+#counter .content {
+  margin-bottom: 30px;
+}
+
+#counter .content h1 {
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #5d4c3e;
+  color: #f7e7db;
+  padding: 15px 25px;
+  border-radius: 20px 20px 0px 0px;
+  margin: 0;
+}
+
+#counter .content p {
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #f7e7db;
+  color: #5d4c3e;
+  padding: 15px 25px;
+  margin: 0;
+  text-align: center;
+}
+
+#counter .buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#counter .buttons .btn {
+  padding: 25px;
+  background: transparent;
+  border: solid 1px #f7e7db;
+  color: #5d4c3e;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#counter .buttons .btn:hover {
+  cursor: pointer;
+  background: #f7e7db;
+  color: #5d4c3e;
+}
+
+@media screen and (max-width: 320px) {
+  #counter {
+    background: #a38a75;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    margin: 30px;
+  }
+  
+  #counter .buttons .btn {
+    font-size: 16px;
+  }
 }
